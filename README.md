@@ -60,6 +60,7 @@ sxMenuShowhide: "<span class='title'>MENU</span><span class='icon'><em></em><em>
 
 - HTML code you want to represent the menu button
 
-****Copyright**
+**Copyright**
+
 Copyright © 2014 Sabri El Gueder (@sabrex_mul)
  
