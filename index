@@ -1,0 +1,178 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="fr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!--[if lt IE 9]> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<title>SxMenu - Responsive Horizontal and Vertical Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/sx-menu.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/sx-menu.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#sabrex-1").sxmenu({
+			sxMenuSpeed: 400,
+			sxMenuIndicator: true,
+			sxMenuShowhide: "<span class='icon'><em></em><em></em><em></em><em></em></span>"
+		});
+		$("#sabrex-2").sxmenu({
+			sxMenuSpeed: 400,
+			sxMenuAlign: "right"
+		});			
+		
+		$("#sabrex-3").sxmenu({
+			sxMenuSpeed: 400,
+			sxMenuType: "vertical",
+			sxMenuIndicator: true,
+			sxMenuShowhide: "<span class='icon'><em></em><em></em><em></em><em></em></span>"
+		});	
+		$("#sabrex-4").sxmenu({
+			sxMenuSpeed: 400,
+			sxMenuType: "vertical",
+			sxMenuAlign: "right"
+		});				
+	});
+</script>
+</head>
+<body>
+<div class="content">
+
+<div class="sx-exemple clearfix">
+  <ul id="sabrex-1" class="sx-menu blue">
+    <li class="active"><a href="javascript:">Home</a></li>
+    <li><a href="javascript:">Services</a></li>
+    <li><a href="javascript:">Portfolio</a>
+      <ul>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a>
+          <ul>
+            <li><a href="javascript:">Dropdown item</a></li>
+            <li><a href="javascript:">Dropdown item</a></li>
+            <li><a href="javascript:">Dropdown item</a>
+              <ul>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+              </ul>
+            </li>
+            <li><a href="javascript:">Dropdown item</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:">Blog</a></li>
+    <li><a href="javascript:">Contact</a></li>
+  </ul>
+</div>  
+
+<div class="sx-exemple clearfix">
+<ul id="sabrex-2" class="sx-menu red">
+    <li class="active"><a href="javascript:">Home</a></li>
+    <li><a href="javascript:">Services</a></li>
+    <li><a href="javascript:">Portfolio</a>
+      <ul>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a>
+          <ul>
+            <li><a href="javascript:">Dropdown item</a></li>
+            <li><a href="javascript:">Dropdown item</a></li>
+            <li><a href="javascript:">Dropdown item</a>
+              <ul>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+              </ul>
+            </li>
+            <li><a href="javascript:">Dropdown item</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:">Blog</a></li>
+    <li><a href="javascript:">Contact</a></li>
+  </ul> 
+</div>  
+  
+<div class="sx-exemple clearfix">  
+<ul id="sabrex-3" class="sx-menu green">
+    <li class="active"><a href="javascript:">Home</a></li>
+    <li><a href="javascript:">Services</a></li>
+    <li><a href="javascript:">Portfolio</a>
+      <ul>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a>
+          <ul>
+            <li><a href="javascript:">Dropdown item</a></li>
+            <li><a href="javascript:">Dropdown item</a></li>
+            <li><a href="javascript:">Dropdown item</a>
+              <ul>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+              </ul>
+            </li>
+            <li><a href="javascript:">Dropdown item</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:">Blog</a></li>
+    <li><a href="javascript:">Contact</a></li>
+  </ul>  
+</div>
+
+<div class="sx-exemple clearfix">
+<ul id="sabrex-4" class="sx-menu orange">
+    <li class="active"><a href="javascript:">Home</a></li>
+    <li><a href="javascript:">Services</a></li>
+    <li><a href="javascript:">Portfolio</a>
+      <ul>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a>
+          <ul>
+            <li><a href="javascript:">Dropdown item</a></li>
+            <li><a href="javascript:">Dropdown item</a></li>
+            <li><a href="javascript:">Dropdown item</a>
+              <ul>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+                <li><a href="javascript:">Dropdown item</a></li>
+              </ul>
+            </li>
+            <li><a href="javascript:">Dropdown item</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:">Dropdown item</a></li>
+        <li><a href="javascript:">Dropdown item</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:">Blog</a></li>
+    <li><a href="javascript:">Contact</a></li>
+  </ul>  
+</div>
+  
+</div>
+</body>
+</html>
