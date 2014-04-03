@@ -1,4 +1,4 @@
-sxMenu
+sxMenu v1.0.0
 ======
 
 A menu system for converting a standard menu into a mobile/tablet responsive menu, media query independent.
