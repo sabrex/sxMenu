@@ -1,7 +1,7 @@
 sxMenu v1.0.0
 ======
 
-A menu system for converting a standard menu into a mobile/tablet responsive menu, media query independent.
+Responsive Horizontal and Vertical Menu. A menu system for converting a standard menu into a mobile/tablet responsive menu, media query independent.
 
 **Please note: This is not a menu system replacement. It is simply a lightweight piece of jQuery to convert a standard navigation into a mobile/tablet navigation.**
 
