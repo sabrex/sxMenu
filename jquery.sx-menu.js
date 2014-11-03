@@ -1,5 +1,5 @@
 /*!
- * jQuery sxMenu v1.0.0
+ * jQuery sxMenu v1.0.1
  * @Copyright (C) 2013-2014 Sabri El Gueder (https://github.com/sabrex/sxMenu)
  *
  */
@@ -17,6 +17,7 @@
 			sxMenuShowhide		: "<span class='title'>MENU</span><span class='icon'><em></em><em></em><em></em><em></em></span>"
         };
         var options = $.extend(defaults, options);
+		var sxLastSize = window.innerWidth;
         
         // get browser width
         var currentWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -41,31 +42,50 @@
 		
 		sxMenu.prepend("<li class='showhide'>"+options.sxMenuShowhide+"</li>");
 		
-		screenSize();
+		screenSize(true);
 		
 		
 		$(window).resize(function() {
-			screenSize();
+			screenSize(false);
 		});
 		
-		function screenSize(){
-			sxMenu.find("li, a").unbind();
-			sxMenu.find("ul").hide(0);
-			sxMenu.find("span.indicator").html(options.sxMenuExpand);
-			if(window.innerWidth <= 768){
-				showCollapse();
-				bindClick();
-				if(bigScreen == true){
-					bigScreen = false;
-					rightAlignMenu();						
-				}
+		function controlSize(){
+			var sxNewSize = window.innerWidth
+			
+			if(sxNewSize <= 768 && sxLastSize <= 768){
+				sxLastSize = sxNewSize;
+				return false;
+			} else if(sxNewSize > 768 && sxLastSize > 768){
+				sxLastSize = sxNewSize;
+				return false;
+			} else {
+				sxLastSize = sxNewSize;
+				return true;				
 			}
-			else{
-				hideCollapse();
-				bindHover();
-				if(options.sxMenuType == "horizontal" && options.sxMenuAlign == "right" && bigScreen == false){
-					bigScreen = true;
-					rightAlignMenu();						
+
+		}
+		
+		function screenSize(val){
+			if(controlSize()==true || val==true){
+				
+				sxMenu.find("li, a").unbind();
+				sxMenu.find("ul").hide(0);
+				sxMenu.find("span.indicator").html(options.sxMenuExpand);
+				if(window.innerWidth <= 768){
+					showCollapse();
+					bindClick();
+					if(bigScreen == true){
+						bigScreen = false;
+						rightAlignMenu();						
+					}
+				}
+				else{
+					hideCollapse();
+					bindHover();
+					if(options.sxMenuType == "horizontal" && options.sxMenuAlign == "right" && bigScreen == false){
+						bigScreen = true;
+						rightAlignMenu();						
+					}
 				}
 			}
 		}
